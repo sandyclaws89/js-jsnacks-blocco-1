@@ -1,23 +1,27 @@
-// let inputText = document.querySelector(`#input`);
-// let buttonInput = document.querySelector(`#button`);
-// let outputClass = document.querySelector(`.output`)
-// console.log(inputText , buttonInput , outputClass);
 
-
-
-// outputClass.innerHTML = "ciao sono finalmente in html";
-// buttonInput = 5;
-// inputText = 4;
-// // let result = buttonInput + inputText;
-
-// outputClass.innerHTML =` ${buttonInput} + ${inputText} = ${ buttonInput + inputText}`;
-
-// // outputClass.innerHTML =result;
-
-// let outputResult = document.querySelector(`.output`);
-
+let outputResult = document.querySelector(`.output`);
 
 // SNACK1
+// L'UTENTE INSERISCE DUE NUMERI IN SUCCESSIONE, CON DUE PROMPT. IL SOFTWARE STAMPA IL MAGGIORE.
+
+// PSEUDOCODIFICA
+/*
+-DOCUMENT.QUERYSELECTOR (HTML CLASS OR ID);
+-PROMPT(NUM1), PROMPT(NUM2)
+-IF NUM1 > NUM2 
+    -OUTPUTRESULT.INNERHTML = NUM1, NUM2;
+-ELSE IF (NUM1== NUM2)
+    -OUTPUTRESULT.INNERHTML = (EQUAL NUMBERS);
+-ELSE
+    -OUTPUTRESULT.INNERHTML = NUM1, NUM2;*/
+
+// let jsButton = document.getElementById("#htmlbutton");
+// let jsInput = document.getElementById("#htmlinput");
+// function myFunction(){
+//     console.log("Mi hai cliccato!")
+// }
+// jsButton.addEventListener(click, myFunction); 
+// HO PROVATO AD ACQUISIRE L'INPUT CON IL BOTTONE I INPUT IN HTML MA NON CI RIESCO
 
 // let firstNumber = prompt(`insert the first number`);
 // let secondNumber = prompt(`insert the second number`);
@@ -32,20 +36,44 @@
 
 
 
+
+
+
 // SNACK2
-// let firstWord = prompt (`Insert first word`);
-// let secondWord = prompt(`Insert second word`);
-// if (firstWord.length > secondWord.length){
-//     console.log(firstWord , secondWord);
-// }else if (firstWord.length == secondWord.length ){
-//     console.log(`The word's letters are the same`);
-// } else {
-//     console.log(secondWord, firstWord);
-// }
+/*
+L'UTENTE INSERISCE DUE PAROLE IN SUCCESSIONE CON DUE PROMPT, IL SOFTWARE STAMPA PRIMA LA PAROLA CORTA, POI QUELLA LUNGA.
+*/
+
+/*
+PSEUDOCODIFICA
+-PROMPT FIRSTWORD, SECONDWORD
+-IF FIRSTWORD.LENGTH>SECONDWORD.LENGTH
+    -OUTPUTRESULT.INNERHTML = FIRSTWORD, SECONDWORD;
+-ELSE IF FIRSTWORD.LENGTH == SECONDWORD.LENGTH
+    -OUTPUTRESULT.INNERHTML = THE WORD'S LETTERS ARE THE SAME
+.ELSE
+    -OUTPUTRESULT.INNERHTML = SECONDWORD, FIRSTWORD;
+*/
+
+/*
+let firstWord = prompt (`Insert first word`);
+let secondWord = prompt(`Insert second word`);
+if (firstWord.length > secondWord.length){
+    outputResult.innerHTML = ` <h1>The longest word is ${firstWord}</h1> </br>
+    <h2> The smallest word is ${secondWord}`;
+}else if (firstWord.length == secondWord.length ){
+    outputResult.innerHTML = ` <h1>The word's letters are the same</h1>`;
+} else {
+    outputResult.innerHTML = ` <h1>The longest word is ${secondWord}</h1> </br>
+    <h2> The smallest word is ${firstWord}`;
+}
+*/
 
 
 
 // SNACK3
+/*IL SOFTWARE DEVE CHIEDERE PER 10 VOLTE ALL'UTENTE DI INSERIRE UN NUMERO. IL PROGRAMMA STAMPA LA SOMMA DI TUTTI I NUMERI INSERITI.*/
+
 // NON RIESCO A SOMMARE TUTTI I VALORI PRESENTI CON ARRAY IN UN ARRAY
 // for (let i=1; i<10 + 1; i++) {
 //     let arr = [];
@@ -70,21 +98,26 @@
 
 
 // SNACK4
+
 /*
 IN UN ARRAY SONO CONTENUTI I NOMI DEGLI INVITATI ALLA FESTA DEL GRANDE GATSBY, CHIEDI ALL'UTENTE IL SUO NOME E COMUNICAGLI SE PUO' PARTECIPARE O NO ALLA FESTA.
 
 -PSEUDOCODIFICA
-    CREO ARRAY CON NOMI CASUALI
-        -CONTROLLO CON INCLUDES SE L'INPUT INSERITO DALL'UTENTE E' PRESENTE
-        -STAMPO CHE NON PUO' PARTECIPARE ALLA FESTA SE IL SUO NOME NON C'E' ALTRIMENTI SI.*/
+-CREO ARRAY CON NOMI CASUALI
+-PROMPT GUEST(INSERT YOUR NAME)
+-IF INVITINGLIST.INCLUDES GUEST
+    OUTPUTRESULT.INNERHTML = WELCOME
+ELSE
+    OUTPURESULT.INNNERHTML = SORRY
+*/
 
 // let invitingList = ["Simone", "Vanessa", "Marco", "Mara", "Paolo", "Park Jin Yong"];
 // /*PERCHE' SE DICHIARO LET FUORI DALLA IF ME LO RICONOSCE LO STESSO?*/
 // let guest =  prompt(`Insert your name`); /*HO PROVATO A METTERE LOWERCASE MA NON ME LO RICONOSCE, HO PROVATO ANCHE NELLA IF*/
 // if (invitingList.includes(guest)) {
-//     console.log (`Welcome to the party!`);
+//     outputResult.innerHTML = "<h1>Welcome to the party!</h1>"; 
 // } else {
-//     console.log (`Sorry you're not on the guest's list`);
+//     outputResult.innerHTML = "<h1>Sorry you're not on the guest's list</h1>";
 // }
 
 
@@ -105,9 +138,13 @@ IN UN ARRAY SONO CONTENUTI I NOMI DEGLI INVITATI ALLA FESTA DEL GRANDE GATSBY, C
 //     let arr = [];
 //     if (number % 2 == 1) {
 //         arr.push(number);
+//         // outputResult.innerHTML = `Odd number ${number}`;
+//             // QUI CON INNER HTML NON MI FUNZIONA, MI STAMPA SOLO L'ULTIMO NUMERO DISPARO, CON CONSOLE LOG FUNZIONA
 //         console.log (`Odd number ${number}`);
 //         // LA VARIABILE MI SAREBBE STATA UTILE FUORI PER STAMPARLA, DOVEVO USARE VAR? 
-//     } 
+//     }
+//     // outputResult.innerHTML = `Odd number ${number}`;
+ 
 // }
 
 // SNACK6
@@ -116,15 +153,26 @@ IN UN ARRAY SONO CONTENUTI I NOMI DEGLI INVITATI ALLA FESTA DEL GRANDE GATSBY, C
 /*PSEUDOCODIFICA
 -CHIEDO DIRETTAMENTE NEL PROMPT DI INSERIRE UN NUMERO DI 4 CIFRE
 -EFFETTUO IL CONTROLLO CON LA IF E IL LENGTH (SE NUM.LENGTH <4 DAI MESSAGGIO DI ERRORE)*/
+// FIXME: CHIEDERE COME SI FANNO LE ADDIZIONI ARITMETICHE
+// let number = prompt ("Enter a 4-digit number");
+//  if (number.length == 4){
+//     // var result
+    
+//     for(let i=0; i<=3; i++ ) {
+//         let result
+//         result = number[i] + number[i+1];
 
-let number = prompt ("Enter a 4-digit number");
- if (number.length == 4){
-    // var result
-    for(let i=0; i<=3; i++ ) {
-        let result
-        result = number[i] + result;
-        console.log(result);
-            //  let result1 = result + number[i];
-    }
-} else { console.log ("Error, the number must be only 4-digit number");
-}
+//         console.log(result);
+//             //  let result1 = result + number[i];
+//     }
+  
+// } else { console.log ("Error, the number must be only 4-digit number");
+// }
+
+
+// var test1 = prompt("inserire il primo numero");
+// var test2 = prompt("inserire il secondo numero");
+// var testTot = (`${test1.value} + ${test2.value}`);
+// console.log(testTot);
+
+// STO PROVANDO PERCHE' NON FUNZIONA L'ADDIZIONE CON LE VARIABILI. HO LETTO SU INTERNET E SPECIFICANO CHE BASTA IL SIMBOLO + MA NON FUNZIONA.
