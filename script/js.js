@@ -222,21 +222,23 @@ Averege = ${averege}`);
 */
 
 
+/*Snack 2.1
+Il software deve chiedere per 5 volte all’utente di inserire un numero.
+Il programma stampa la somma di tutti i numeri inseriti.
+Esegui questo programma in due versioni, con il for e con il while.*/
 
+// PSEUDOCODIFICA CON FOR:
+// UN CICLO FOR CHE RIPETE 5 VOLTE
+//     -PROMPT PER INPUT CON PARSEINT E METTERE DENTRO ARRAY
+//     -SUM += ARRAY[I DELL'ITERAZIONE IN CORSO]
+// CONSOLE LOG SUM
+/*let sum =0;
+let arr = [];
+for (let i=1; i <=6; i++){
+    let num = parseInt(prompt(`insert the ${i}° number: `));
+    arr.push(num);
+    sum += arr[i-1];    
+}
+console.log(sum);*/
 
-
-
-// while (i!=10) {
-//     sum += parseInt(arr[i]);
-//     i++;
-// }
-// console.log(sum);
-// let media = parseFloat( sum / 10);
-// console.log(media);
-
-// for (i=0; i <10; i++) {
-//     sum += parseInt(arr[i]);
-// }
-// console.log(sum);
-// let media = parseFloat( sum / 10);
-// console.log(media);
+PSEUDOCODIFICA CON WHILE
