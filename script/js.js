@@ -264,3 +264,29 @@ while (i<6){
 }
 console.log(sum);*/
 
+
+/*Snack 2.2
+Inserisci un numero, se è pari stampa il numero,
+se è dispari stampa il numero successivo*/
+
+// PSEUDOCODIFICA:
+// PROMPT CON PARSEINT
+// SE IL NUMERO INSERITO %2 DA RESTO 0
+//     -STAMPA NUMERO
+// ALTRIMENTI 
+//     STAMPA NUMERO + 1;
+
+
+/*
+let num = parseInt(prompt("Insert the number"));
+// FIXME: SISTEMARE CONTROLLO 
+if(num==NaN){
+    alert(`Error, you must be to insert a number`)
+}
+if (num %2 == 0){
+    console.log(`The number ${num} is even`);
+}
+else {
+    console.log(`The number after the insert number is ${num +1}`)
+}
+*/
