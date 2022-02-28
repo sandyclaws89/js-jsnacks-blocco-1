@@ -228,8 +228,11 @@ Il programma stampa la somma di tutti i numeri inseriti.
 Esegui questo programma in due versioni, con il for e con il while.*/
 
 // PSEUDOCODIFICA CON FOR:
+// DICHIARA SOMMA =0
+// DICHIARA ARRAY VUOTO
 // UN CICLO FOR CHE RIPETE 5 VOLTE
 //     -PROMPT PER INPUT CON PARSEINT E METTERE DENTRO ARRAY
+//     -AGGIUNGI VALORE ALL'ARRAY PUSH
 //     -SUM += ARRAY[I DELL'ITERAZIONE IN CORSO]
 // CONSOLE LOG SUM
 /*let sum =0;
@@ -241,4 +244,23 @@ for (let i=1; i <=6; i++){
 }
 console.log(sum);*/
 
-PSEUDOCODIFICA CON WHILE
+// PSEUDOCODIFICA CON WHILE
+// DICHIARA SOMMA =0
+// DICHIARA ARRAY VUOTO
+// DICHIARA I FUORI DAL CICLO WHILE
+// WHILE MENTRE I <=6
+//     -PROMPT PER INPUT CON PARSEINT E METTERE DENTRO ARRAY
+//     -AGGIUNGI VALORE ALL'ARRAY PUSH
+//     -SUM += ARRAY[I DELL'ITERAZIONE IN CORSO]
+// CONSOLE LOG SUM
+/*let sum =0;
+let i =0;
+let arr = [];
+while (i<6){
+    i++;
+    let num = parseInt(prompt(`insert the ${i}° number: `));
+    arr.push(num);
+    sum += arr[i-1];    
+}
+console.log(sum);*/
+
