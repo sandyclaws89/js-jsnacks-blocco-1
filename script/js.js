@@ -316,6 +316,9 @@ let resultName = arrName[Math.floor(Math.random() * 9 ) +1];
 // resultName = arrName[resultNameTemp];
 let resultSurname = arrSurname[Math.floor(Math.random() * 9 ) +1];
 
-console.log (`The fake guest ${resultName} ${resultSurname} is welcome to the party`);
+// console.log (`The fake guest ${resultName} ${resultSurname} is welcome to the party`);
+
+let Fakelist = resultName + resultSurname;
+console.log(Fakelist);
 
 
