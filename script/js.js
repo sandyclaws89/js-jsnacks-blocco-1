@@ -311,14 +311,59 @@ let arrSurname = ["Verdi", "Rossi", "Bianchi", "Viola", "Rossini", "Verdini", "V
 
 // const shuffledArray = arrTot.sort((a, b) => 0.5 - Math.random());
 // console.log(shuffledArray);
-
-let resultName = arrName[Math.floor(Math.random() * 9 ) +1];
+    // let fakeList1=0;
+    // let fakeList2=0;
+    // let fakeList3=0;
+let randomName1 = arrName[Math.floor(Math.random() * 9 ) +1];
+let randomName2 = arrName[Math.floor(Math.random() * 9 ) +1];
+let randomName3 = arrName[Math.floor(Math.random() * 9 ) +1];
+let randomName4 = arrName[Math.floor(Math.random() * 9 ) +1];
+let randomName5 = arrName[Math.floor(Math.random() * 9 ) +1];
+let randomName6 = arrName[Math.floor(Math.random() * 9 ) +1];
 // resultName = arrName[resultNameTemp];
-let resultSurname = arrSurname[Math.floor(Math.random() * 9 ) +1];
-
+let randomSurname1 = arrSurname[Math.floor(Math.random() * 9 ) +1];
+let randomSurname2 = arrSurname[Math.floor(Math.random() * 9 ) +1];
+let randomSurname3 = arrSurname[Math.floor(Math.random() * 9 ) +1];
+let randomSurname4 = arrSurname[Math.floor(Math.random() * 9 ) +1];
+let randomSurname5 = arrSurname[Math.floor(Math.random() * 9 ) +1];
+let randomSurname6 = arrSurname[Math.floor(Math.random() * 9 ) +1];
 // console.log (`The fake guest ${resultName} ${resultSurname} is welcome to the party`);
 
-let Fakelist = resultName + resultSurname;
-console.log(Fakelist);
+// NON CAPISCO PERCHE' NON FUNZIONA 
+
+
+if (randomName1!=randomName2&&randomName2!=randomName3&&randomName3!=randomName1&& randomSurname1!=randomSurname2&& randomSurname2!=randomSurname3&&randomSurname3!=randomSurname1){
+let fakeList1 = randomName1 +' '+ randomSurname1;
+console.log(fakeList1);
+let fakeList2 = randomName2 +' '+ randomSurname2;
+console.log(fakeList2);
+let fakeList3 = randomName3 +' '+ randomSurname3;
+console.log(fakeList3);
+} else {
+    let fakeList4 = randomName4 +' '+ randomSurname4;
+console.log(fakeList4);
+let fakeList5 = randomName5 +' '+ randomSurname5;
+console.log(fakeList5);
+let fakeList6 = randomName6 +' '+    randomSurname6;
+console.log(fakeList6);
+}
+
+// HO PROVATO VARI TENTATIVI PER ELIMINARE IL PROBLEMA DEL NOME O COGNOME UGUALI MA NON SONO RIUSCITO A RISOLVERLO TOTALMENTE
+
+    // if (fakeList1!= fakeList2&&fakeList2!=fakeList3&&fakeList3!=fakeList1){
+    //     fakeList1 = randomName1 + randomSurname1;
+    // console.log(fakeList1);
+    // fakeList2 = randomName2 + randomSurname2;
+    // console.log(fakeList2);
+    // fakeList3 = randomName3 + randomSurname3;
+    // console.log(fakeList3);
+    // }
+
+
+
+
+
+// let arrFake = [fakeList, fakeList1, fakeList]
+// console.log (arrFake)
 
 
