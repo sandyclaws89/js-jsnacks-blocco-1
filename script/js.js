@@ -290,3 +290,32 @@ else {
     console.log(`The number after the insert number is ${num +1}`)
 }
 */
+
+/*Snack 2.3
+Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di 3 invitati.*/
+
+// PSEUDOCODIFICA:
+// CREO ARRAY CON LISTA NOMI 
+// CREO ARRAY CON LISTA COGNOMI
+// LI ESPLODO CON SPREAD
+// LI UNISCO INSIEME CON UNIONESPREAD
+// CON MATH RANDOM GENERO NUMERI CASUALI E AD OGNI NUMERO ASSOCIO IL VALORE DELL'ARRAY NUOVO
+
+let arrName = ["Claudio", "Fabio", "Simone", "Elettra", "Federico", "Silvia", "Marco", "Alessandra", "Roberta", "Gianluca"];
+let arrSurname = ["Verdi", "Rossi", "Bianchi", "Viola", "Rossini", "Verdini", "Violetti", "Blu", "Marroni", "Gialli"];
+// console.log (arrName);
+// console.log (arrSurname);
+
+// let arrTot =  [...arrName, ...arrSurname];
+// // console.log (arrTot)
+
+// const shuffledArray = arrTot.sort((a, b) => 0.5 - Math.random());
+// console.log(shuffledArray);
+
+let resultName = arrName[Math.floor(Math.random() * 9 ) +1];
+// resultName = arrName[resultNameTemp];
+let resultSurname = arrSurname[Math.floor(Math.random() * 9 ) +1];
+
+console.log (`The fake guest ${resultName} ${resultSurname} is welcome to the party`);
+
+
