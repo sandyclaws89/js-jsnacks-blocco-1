@@ -276,20 +276,27 @@ se è dispari stampa il numero successivo*/
 // ALTRIMENTI 
 //     STAMPA NUMERO + 1;
 
-
-/*
 let num = parseInt(prompt("Insert the number"));
 // FIXME: SISTEMARE CONTROLLO 
-if(num==NaN){
-    alert(`Error, you must be to insert a number`)
+if(Number.isNaN(num)){
+    // console.log("ciao")
+    alert(`Error, you must be to insert a number`);
+} else {
+    if (num %2 == 0){
+        console.log(`The number ${num} is even`);
+    }
+    else {  
+        console.log(`The number after the insert number is ${num +1}`)
+    }
+
 }
-if (num %2 == 0){
-    console.log(`The number ${num} is even`);
-}
-else {
-    console.log(`The number after the insert number is ${num +1}`)
-}
-*/
+
+
+
+
+
+
+
 
 /*Snack 2.3
 Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di 3 invitati.*/
@@ -301,52 +308,37 @@ Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una list
 // LI UNISCO INSIEME CON UNIONESPREAD
 // CON MATH RANDOM GENERO NUMERI CASUALI E AD OGNI NUMERO ASSOCIO IL VALORE DELL'ARRAY NUOVO
 
-let arrName = ["Claudio", "Fabio", "Simone", "Elettra", "Federico", "Silvia", "Marco", "Alessandra", "Roberta", "Gianluca"];
-let arrSurname = ["Verdi", "Rossi", "Bianchi", "Viola", "Rossini", "Verdini", "Violetti", "Blu", "Marroni", "Gialli"];
-// console.log (arrName);
-// console.log (arrSurname);
+// let arrName = ["Claudio", "Fabio", "Simone", "Elettra", "Federico", "Silvia", "Marco", "Alessandra", "Roberta", "Gianluca"];
+// let arrSurname = ["Verdi", "Rossi", "Bianchi", "Viola", "Rossini", "Verdini", "Violetti", "Blu", "Marroni", "Gialli"];
 
-// let arrTot =  [...arrName, ...arrSurname];
-// // console.log (arrTot)
+// let randomName1 = arrName[Math.floor(Math.random() * 9 ) +1];
+// let randomName2 = arrName[Math.floor(Math.random() * 9 ) +1];
+// let randomName3 = arrName[Math.floor(Math.random() * 9 ) +1];
+// let randomName4 = arrName[Math.floor(Math.random() * 9 ) +1];
+// let randomName5 = arrName[Math.floor(Math.random() * 9 ) +1];
+// let randomName6 = arrName[Math.floor(Math.random() * 9 ) +1];
+// let randomSurname1 = arrSurname[Math.floor(Math.random() * 9 ) +1];
+// let randomSurname2 = arrSurname[Math.floor(Math.random() * 9 ) +1];
+// let randomSurname3 = arrSurname[Math.floor(Math.random() * 9 ) +1];
+// let randomSurname4 = arrSurname[Math.floor(Math.random() * 9 ) +1];
+// let randomSurname5 = arrSurname[Math.floor(Math.random() * 9 ) +1];
+// let randomSurname6 = arrSurname[Math.floor(Math.random() * 9 ) +1];
 
-// const shuffledArray = arrTot.sort((a, b) => 0.5 - Math.random());
-// console.log(shuffledArray);
-    // let fakeList1=0;
-    // let fakeList2=0;
-    // let fakeList3=0;
-let randomName1 = arrName[Math.floor(Math.random() * 9 ) +1];
-let randomName2 = arrName[Math.floor(Math.random() * 9 ) +1];
-let randomName3 = arrName[Math.floor(Math.random() * 9 ) +1];
-let randomName4 = arrName[Math.floor(Math.random() * 9 ) +1];
-let randomName5 = arrName[Math.floor(Math.random() * 9 ) +1];
-let randomName6 = arrName[Math.floor(Math.random() * 9 ) +1];
-// resultName = arrName[resultNameTemp];
-let randomSurname1 = arrSurname[Math.floor(Math.random() * 9 ) +1];
-let randomSurname2 = arrSurname[Math.floor(Math.random() * 9 ) +1];
-let randomSurname3 = arrSurname[Math.floor(Math.random() * 9 ) +1];
-let randomSurname4 = arrSurname[Math.floor(Math.random() * 9 ) +1];
-let randomSurname5 = arrSurname[Math.floor(Math.random() * 9 ) +1];
-let randomSurname6 = arrSurname[Math.floor(Math.random() * 9 ) +1];
-// console.log (`The fake guest ${resultName} ${resultSurname} is welcome to the party`);
-
-// NON CAPISCO PERCHE' NON FUNZIONA 
-
-
-if (randomName1!=randomName2&&randomName2!=randomName3&&randomName3!=randomName1&& randomSurname1!=randomSurname2&& randomSurname2!=randomSurname3&&randomSurname3!=randomSurname1){
-let fakeList1 = randomName1 +' '+ randomSurname1;
-console.log(fakeList1);
-let fakeList2 = randomName2 +' '+ randomSurname2;
-console.log(fakeList2);
-let fakeList3 = randomName3 +' '+ randomSurname3;
-console.log(fakeList3);
-} else {
-    let fakeList4 = randomName4 +' '+ randomSurname4;
-console.log(fakeList4);
-let fakeList5 = randomName5 +' '+ randomSurname5;
-console.log(fakeList5);
-let fakeList6 = randomName6 +' '+    randomSurname6;
-console.log(fakeList6);
-}
+// if (randomName1!=randomName2&&randomName2!=randomName3&&randomName3!=randomName1&& randomSurname1!=randomSurname2&& randomSurname2!=randomSurname3&&randomSurname3!=randomSurname1){
+// let fakeList1 = randomName1 +' '+ randomSurname1;
+// console.log(fakeList1);
+// let fakeList2 = randomName2 +' '+ randomSurname2;
+// console.log(fakeList2);
+// let fakeList3 = randomName3 +' '+ randomSurname3;
+// console.log(fakeList3);
+// } else {
+//     let fakeList4 = randomName4 +' '+ randomSurname4;
+// console.log(fakeList4);
+// let fakeList5 = randomName5 +' '+ randomSurname5;
+// console.log(fakeList5);
+// let fakeList6 = randomName6 +' '+    randomSurname6;
+// console.log(fakeList6);
+// }
 
 // HO PROVATO VARI TENTATIVI PER ELIMINARE IL PROBLEMA DEL NOME O COGNOME UGUALI MA NON SONO RIUSCITO A RISOLVERLO TOTALMENTE
 
