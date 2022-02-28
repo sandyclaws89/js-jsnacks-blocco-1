@@ -176,3 +176,67 @@ ELSE
 // console.log(testTot);
 
 // STO PROVANDO PERCHE' NON FUNZIONA L'ADDIZIONE CON LE VARIABILI. HO LETTO SU INTERNET E SPECIFICANO CHE BASTA IL SIMBOLO + MA NON FUNZIONA.
+
+
+
+
+
+/*
+SNACK 1.9
+CALCOLA LA SOMMA E LA MEDIA DEI PRIMI 10 NUMERI 
+
+PSEUDOCODIFICA CON FOR:
+-DICHIARA VARIABILE SUM =0
+-FAI UN CICLO FOR PER RIPETERE I NUMERI FINO A 10
+    -SUM = SUM + I DI QUELL'ITERAZIONE
+-LET MEDIA = SUM /10
+-CONSOLE.LOG SUM , AVEREGE
+*/
+/*let sum=0;
+for(let i=1; i<=10; i++){
+    sum+= i;
+}
+let averege = sum / 10;
+console.log(`Sum = ${sum}
+Averege = ${averege}`)*/
+
+/*
+PSEUDOCODIFICA CON WHILE:
+-VARIABILE SUM = 0;
+-FAI WHILE MENTRE I<=10
+    -SUM -SUM = SUM + I DI QUELL'ITERAZIONE
+    -I++
+-LET MEDIA = SUM /10
+-CONSOLE.LOG SUM , AVEREGE
+*/
+/*
+let sum =0;
+let i =0;
+while (i<=10) {
+    sum += i;
+    i++;
+}
+let averege = sum / 10;
+console.log(`Sum = ${sum}
+Averege = ${averege}`);
+*/
+
+
+
+
+
+
+// while (i!=10) {
+//     sum += parseInt(arr[i]);
+//     i++;
+// }
+// console.log(sum);
+// let media = parseFloat( sum / 10);
+// console.log(media);
+
+// for (i=0; i <10; i++) {
+//     sum += parseInt(arr[i]);
+// }
+// console.log(sum);
+// let media = parseFloat( sum / 10);
+// console.log(media);
